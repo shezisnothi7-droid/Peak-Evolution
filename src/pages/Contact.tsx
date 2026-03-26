@@ -1,9 +1,9 @@
 import { motion } from "motion/react";
-import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
+import { Phone, MessageCircle, Mail, MapPin, Send, Clock } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="bg-[#0A0A0A] text-white pt-32 pb-24 min-h-screen">
+    <div className="bg-black text-white pt-32 pb-24 min-h-screen">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-20">
@@ -13,40 +13,51 @@ export default function Contact() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <h1 className="text-6xl font-bold uppercase italic mb-8 leading-none">
-                  Book Your <br />
-                  <span className="text-orange-600">Strategy Call.</span>
+                <div className="inline-flex items-center gap-2 bg-brand-orange text-black px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest mb-6">
+                  <Clock className="w-4 h-4" /> 24/7 Emergency Support
+                </div>
+                <h1 className="text-5xl md:text-6xl font-black uppercase mb-8 leading-none">
+                  Get a <span className="text-brand-orange">Free Quote.</span>
                 </h1>
                 <p className="text-xl text-neutral-400 mb-12">
-                  This is not a sales call. It's a strategy session to identify your plateaus and map out your path to elite performance.
+                  Need an expert? Whether it's an emergency repair or a new installation, we're here to help. Call us directly or fill out the form.
                 </p>
 
                 <div className="space-y-8">
-                  <div className="flex items-center gap-6">
-                    <div className="w-12 h-12 bg-[#141414] flex items-center justify-center border border-white/10">
-                      <Mail className="w-6 h-6 text-orange-600" />
+                  <div className="flex items-center gap-6 group">
+                    <div className="w-14 h-14 bg-neutral-900 flex items-center justify-center border border-white/10 group-hover:border-brand-orange transition-colors">
+                      <Phone className="w-6 h-6 text-brand-orange" />
                     </div>
                     <div>
-                      <p className="text-xs uppercase text-neutral-500 font-bold">Email Us</p>
-                      <p className="text-lg font-bold">elite@peakevolution.com</p>
+                      <p className="text-xs uppercase text-neutral-500 font-bold">Call Delano</p>
+                      <a href="tel:0662283190" className="text-xl font-black hover:text-brand-orange transition-colors">066 228 3190</a>
                     </div>
                   </div>
-                  <div className="flex items-center gap-6">
-                    <div className="w-12 h-12 bg-[#141414] flex items-center justify-center border border-white/10">
-                      <Phone className="w-6 h-6 text-orange-600" />
+                  <div className="flex items-center gap-6 group">
+                    <div className="w-14 h-14 bg-neutral-900 flex items-center justify-center border border-white/10 group-hover:border-brand-orange transition-colors">
+                      <Phone className="w-6 h-6 text-brand-orange" />
                     </div>
                     <div>
-                      <p className="text-xs uppercase text-neutral-500 font-bold">Call Us</p>
-                      <p className="text-lg font-bold">+1 (555) PEAK-EVO</p>
+                      <p className="text-xs uppercase text-neutral-500 font-bold">Call Miguel</p>
+                      <a href="tel:0710731235" className="text-xl font-black hover:text-brand-orange transition-colors">071 073 1235</a>
                     </div>
                   </div>
-                  <div className="flex items-center gap-6">
-                    <div className="w-12 h-12 bg-[#141414] flex items-center justify-center border border-white/10">
-                      <MapPin className="w-6 h-6 text-orange-600" />
+                  <div className="flex items-center gap-6 group">
+                    <div className="w-14 h-14 bg-neutral-900 flex items-center justify-center border border-white/10 group-hover:border-brand-orange transition-colors">
+                      <MessageCircle className="w-6 h-6 text-green-500" />
                     </div>
                     <div>
-                      <p className="text-xs uppercase text-neutral-500 font-bold">Location</p>
-                      <p className="text-lg font-bold">123 Performance Way, Elite District</p>
+                      <p className="text-xs uppercase text-neutral-500 font-bold">WhatsApp Now</p>
+                      <a href="https://wa.me/27662283190" target="_blank" className="text-xl font-black hover:text-green-500 transition-colors">Message Us</a>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-6 group">
+                    <div className="w-14 h-14 bg-neutral-900 flex items-center justify-center border border-white/10 group-hover:border-brand-orange transition-colors">
+                      <MapPin className="w-6 h-6 text-brand-orange" />
+                    </div>
+                    <div>
+                      <p className="text-xs uppercase text-neutral-500 font-bold">Service Areas</p>
+                      <p className="text-lg font-bold">Johannesburg, Sandton & Surrounds</p>
                     </div>
                   </div>
                 </div>
@@ -57,7 +68,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-[#141414] p-10 border border-white/10"
+              className="bg-neutral-900 p-10 border border-white/10"
             >
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid md:grid-cols-2 gap-6">
@@ -65,70 +76,53 @@ export default function Contact() {
                     <label className="text-xs uppercase font-bold text-neutral-500">Full Name</label>
                     <input 
                       type="text" 
-                      className="w-full bg-black border border-white/10 p-4 focus:border-orange-600 outline-none transition-colors"
-                      placeholder="John Doe"
+                      className="w-full bg-black border border-white/10 p-4 focus:border-brand-orange outline-none transition-colors"
+                      placeholder="Your Name"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-xs uppercase font-bold text-neutral-500">Email Address</label>
+                    <label className="text-xs uppercase font-bold text-neutral-500">Phone Number</label>
                     <input 
-                      type="email" 
-                      className="w-full bg-black border border-white/10 p-4 focus:border-orange-600 outline-none transition-colors"
-                      placeholder="john@example.com"
+                      type="tel" 
+                      className="w-full bg-black border border-white/10 p-4 focus:border-brand-orange outline-none transition-colors"
+                      placeholder="012 345 6789"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-xs uppercase font-bold text-neutral-500">Primary Goal</label>
-                  <select className="w-full bg-black border border-white/10 p-4 focus:border-orange-600 outline-none transition-colors appearance-none">
-                    <option>Fat Loss & Body Recomposition</option>
-                    <option>Muscle Growth & Strength</option>
-                    <option>Elite Athletic Performance</option>
-                    <option>12-Week Transformation</option>
+                  <label className="text-xs uppercase font-bold text-neutral-500">Service Required</label>
+                  <select className="w-full bg-black border border-white/10 p-4 focus:border-brand-orange outline-none transition-colors appearance-none">
+                    <option>Electrical Repairs / DB Boards</option>
+                    <option>Security / CCTV / Fencing</option>
+                    <option>Solar / Backup Power</option>
+                    <option>Plumbing / Renovations</option>
+                    <option>Emergency Call-out</option>
                   </select>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-xs uppercase font-bold text-neutral-500">Current Fitness Level</label>
-                  <div className="grid grid-cols-3 gap-4">
-                    {['Beginner', 'Intermediate', 'Advanced'].map((level) => (
-                      <button 
-                        key={level}
-                        type="button"
-                        className="py-3 px-4 border border-white/10 hover:border-orange-600 text-sm font-bold uppercase transition-all"
-                      >
-                        {level}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-xs uppercase font-bold text-neutral-500">Commitment Level (1-10)</label>
-                  <input type="range" min="1" max="10" className="w-full accent-orange-600" />
-                  <div className="flex justify-between text-[10px] text-neutral-500 font-bold uppercase">
-                    <span>Just Curious</span>
-                    <span>Ready to Evolve</span>
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-xs uppercase font-bold text-neutral-500">Message (Optional)</label>
-                  <textarea 
-                    rows={4}
-                    className="w-full bg-black border border-white/10 p-4 focus:border-orange-600 outline-none transition-colors"
-                    placeholder="Tell us about your challenges..."
+                  <label className="text-xs uppercase font-bold text-neutral-500">Location</label>
+                  <input 
+                    type="text" 
+                    className="w-full bg-black border border-white/10 p-4 focus:border-brand-orange outline-none transition-colors"
+                    placeholder="e.g. Sandton, Johannesburg"
                   />
                 </div>
 
-                <button className="w-full bg-orange-600 hover:bg-orange-700 text-white py-5 font-black uppercase tracking-widest flex items-center justify-center gap-3 transition-all">
-                  Submit Application
+                <div className="space-y-2">
+                  <label className="text-xs uppercase font-bold text-neutral-500">How can we help?</label>
+                  <textarea 
+                    rows={4}
+                    className="w-full bg-black border border-white/10 p-4 focus:border-brand-orange outline-none transition-colors"
+                    placeholder="Describe your issue or project..."
+                  />
+                </div>
+
+                <button className="w-full bg-brand-orange text-black py-5 font-black uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-white transition-all">
+                  Send Request
                   <Send className="w-5 h-5" />
                 </button>
-                <p className="text-[10px] text-center text-neutral-600 uppercase font-bold">
-                  *We only accept 5 new clients per month to ensure elite standards.
-                </p>
               </form>
             </motion.div>
           </div>

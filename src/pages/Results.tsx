@@ -1,93 +1,73 @@
 import { motion } from "motion/react";
+import { Phone, Clock, Zap, AlertTriangle, Shield, MessageCircle } from "lucide-react";
 
-export default function Results() {
-  const caseStudies = [
-    {
-      name: "David R.",
-      role: "Entrepreneur",
-      problem: "Stagnant for 2 years, high stress, poor sleep.",
-      process: "Implemented 1:1 Elite Coaching with focus on metabolic health and heavy compound lifting.",
-      result: "-15kg Fat, +8kg Muscle, 220kg Deadlift.",
-      image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=2070&auto=format&fit=crop"
-    },
-    {
-      name: "Sarah L.",
-      role: "CEO",
-      problem: "Inconsistent training, generic gym burnout.",
-      process: "12-Week Transformation focused on high-density training and precision nutrition.",
-      result: "Visible abs for the first time, 2x bodyweight squat.",
-      image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=2069&auto=format&fit=crop"
-    }
-  ];
-
+export default function Emergency() {
   return (
-    <div className="bg-[#0A0A0A] text-white pt-32 pb-24">
+    <div className="bg-black text-white pt-32 pb-24 min-h-screen">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mb-20">
-          <h1 className="text-6xl font-bold uppercase italic mb-6 leading-none">
-            The <span className="text-orange-600">Evidence.</span>
-          </h1>
-          <p className="text-xl text-neutral-400">
-            We don't do "before and after" photos. We do identity shifts. These are the results of discipline and systems.
-          </p>
-        </div>
-
-        {/* Case Studies */}
-        <div className="space-y-24 mb-32">
-          {caseStudies.map((study, i) => (
-            <motion.div 
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className={`flex flex-col ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-16 items-center`}
-            >
-              <div className="w-full md:w-1/2 aspect-[4/5] relative">
-                <img 
-                  src={study.image} 
-                  alt={study.name} 
-                  className="w-full h-full object-cover grayscale border border-white/10"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute -bottom-6 -right-6 bg-orange-600 p-8 hidden md:block">
-                  <p className="text-2xl font-black italic uppercase leading-none">Proven.</p>
-                </div>
-              </div>
-              <div className="w-full md:w-1/2">
-                <p className="text-orange-600 font-bold uppercase tracking-widest text-sm mb-4">Case Study: {study.name}</p>
-                <h2 className="text-4xl font-bold uppercase italic mb-8">{study.role}</h2>
-                
-                <div className="space-y-8">
-                  <div>
-                    <h3 className="text-xs uppercase font-bold text-neutral-500 mb-2 tracking-widest">The Problem</h3>
-                    <p className="text-xl text-neutral-300 font-light italic">"{study.problem}"</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xs uppercase font-bold text-neutral-500 mb-2 tracking-widest">The Process</h3>
-                    <p className="text-neutral-400 leading-relaxed">{study.process}</p>
-                  </div>
-                  <div className="p-6 bg-[#141414] border-l-4 border-orange-600">
-                    <h3 className="text-xs uppercase font-bold text-orange-600 mb-2 tracking-widest">The Result</h3>
-                    <p className="text-2xl font-bold uppercase italic">{study.result}</p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-            <div key={i} className="aspect-square bg-[#141414] overflow-hidden group border border-white/5">
-              <img 
-                src={`https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop&seed=res-${i}`} 
-                alt="Transformation" 
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
-                referrerPolicy="no-referrer"
-              />
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-2 rounded-full text-sm font-black uppercase tracking-widest mb-8 animate-pulse">
+              <AlertTriangle className="w-5 h-5" /> Emergency Service 24/7
             </div>
-          ))}
+            
+            <h1 className="text-5xl md:text-8xl font-black uppercase mb-8 leading-none">
+              Need Help <br /><span className="text-brand-orange">Right Now?</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-neutral-400 mb-12 max-w-2xl mx-auto">
+              Electrical fault? Power outage? Security breach? Alpha Power provides immediate response for all electrical and maintenance emergencies in Johannesburg.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-16">
+              <a 
+                href="tel:0662283190" 
+                className="bg-brand-orange text-black p-10 flex flex-col items-center justify-center gap-4 hover:bg-white transition-all group"
+              >
+                <Phone className="w-12 h-12 group-hover:scale-110 transition-transform" />
+                <div>
+                  <p className="text-xs uppercase font-black opacity-60 mb-1">Call Delano</p>
+                  <p className="text-3xl font-black">066 228 3190</p>
+                </div>
+              </a>
+              <a 
+                href="tel:0710731235" 
+                className="bg-white text-black p-10 flex flex-col items-center justify-center gap-4 hover:bg-brand-orange transition-all group"
+              >
+                <Phone className="w-12 h-12 group-hover:scale-110 transition-transform" />
+                <div>
+                  <p className="text-xs uppercase font-black opacity-60 mb-1">Call Miguel</p>
+                  <p className="text-3xl font-black">071 073 1235</p>
+                </div>
+              </a>
+            </div>
+
+            <a 
+              href="https://wa.me/27662283190" 
+              target="_blank"
+              className="inline-flex items-center gap-3 text-2xl font-black uppercase tracking-widest text-green-500 hover:text-white transition-colors mb-24"
+            >
+              <MessageCircle className="w-8 h-8" /> WhatsApp Now for Immediate Response
+            </a>
+
+            <div className="grid sm:grid-cols-3 gap-8 text-left border-t border-white/10 pt-16">
+              {[
+                { icon: <Clock className="w-8 h-8 text-brand-orange" />, title: "24/7 Availability", desc: "Day or night, we are ready to assist." },
+                { icon: <Zap className="w-8 h-8 text-brand-orange" />, title: "Fast Response", desc: "We prioritize emergency calls." },
+                { icon: <Shield className="w-8 h-8 text-brand-orange" />, title: "Expert Fix", desc: "Professional repairs on the spot." }
+              ].map((item, i) => (
+                <div key={i} className="space-y-4">
+                  {item.icon}
+                  <h3 className="text-lg font-black uppercase">{item.title}</h3>
+                  <p className="text-neutral-500 text-sm">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>
