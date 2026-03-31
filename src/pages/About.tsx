@@ -31,7 +31,7 @@ export default function About() {
               <div>
                 <h2 className="text-2xl font-black uppercase mb-6 text-brand-orange">Who We Are</h2>
                 <p className="text-neutral-400 leading-relaxed mb-6">
-                  Led by Delano and Miguel, Alpha Power is a team of dedicated professionals providing top-tier electrical, security, and maintenance services across Johannesburg.
+                  Led by Miguel, Alpha Power is a team of dedicated professionals providing top-tier electrical, security, and maintenance services across Johannesburg.
                 </p>
                 <p className="text-neutral-400 leading-relaxed">
                   We aren't just electricians. We are all-in-one home and business maintenance experts. From complex solar installations to emergency electrical repairs and complete bathroom renovations, we handle it all with precision and care.
@@ -61,11 +61,6 @@ export default function About() {
             <div className="bg-neutral-900 p-12 border border-white/5 text-center">
               <h2 className="text-3xl font-black uppercase mb-8">Need Help Now?</h2>
               <div className="flex flex-col md:flex-row justify-center gap-8">
-                <div>
-                  <p className="text-xs uppercase text-neutral-500 font-bold mb-2">Delano</p>
-                  <a href="tel:0662283190" className="text-2xl font-black hover:text-brand-orange transition-colors">066 228 3190</a>
-                </div>
-                <div className="w-px h-12 bg-white/10 hidden md:block mx-auto" />
                 <div>
                   <p className="text-xs uppercase text-neutral-500 font-bold mb-2">Miguel</p>
                   <a href="tel:0710731235" className="text-2xl font-black hover:text-brand-orange transition-colors">071 073 1235</a>

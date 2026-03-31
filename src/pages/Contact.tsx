@@ -29,15 +29,6 @@ export default function Contact() {
                       <Phone className="w-6 h-6 text-brand-orange" />
                     </div>
                     <div>
-                      <p className="text-xs uppercase text-neutral-500 font-bold">Call Delano</p>
-                      <a href="tel:0662283190" className="text-xl font-black hover:text-brand-orange transition-colors">066 228 3190</a>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-6 group">
-                    <div className="w-14 h-14 bg-neutral-900 flex items-center justify-center border border-white/10 group-hover:border-brand-orange transition-colors">
-                      <Phone className="w-6 h-6 text-brand-orange" />
-                    </div>
-                    <div>
                       <p className="text-xs uppercase text-neutral-500 font-bold">Call Miguel</p>
                       <a href="tel:0710731235" className="text-xl font-black hover:text-brand-orange transition-colors">071 073 1235</a>
                     </div>
@@ -48,7 +39,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-xs uppercase text-neutral-500 font-bold">WhatsApp Now</p>
-                      <a href="https://wa.me/27662283190" target="_blank" className="text-xl font-black hover:text-green-500 transition-colors">Message Us</a>
+                      <a href="https://wa.me/27710731235" target="_blank" className="text-xl font-black hover:text-green-500 transition-colors">Message Us</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-6 group">

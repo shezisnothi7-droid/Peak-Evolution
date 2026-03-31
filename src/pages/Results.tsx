@@ -23,20 +23,10 @@ export default function Emergency() {
               Electrical fault? Power outage? Security breach? Alpha Power provides immediate response for all electrical and maintenance emergencies in Johannesburg.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-16">
-              <a 
-                href="tel:0662283190" 
-                className="bg-brand-orange text-black p-10 flex flex-col items-center justify-center gap-4 hover:bg-white transition-all group"
-              >
-                <Phone className="w-12 h-12 group-hover:scale-110 transition-transform" />
-                <div>
-                  <p className="text-xs uppercase font-black opacity-60 mb-1">Call Delano</p>
-                  <p className="text-3xl font-black">066 228 3190</p>
-                </div>
-              </a>
+            <div className="grid md:grid-cols-1 gap-6 mb-16 max-w-md mx-auto">
               <a 
                 href="tel:0710731235" 
-                className="bg-white text-black p-10 flex flex-col items-center justify-center gap-4 hover:bg-brand-orange transition-all group"
+                className="bg-brand-orange text-black p-10 flex flex-col items-center justify-center gap-4 hover:bg-white transition-all group"
               >
                 <Phone className="w-12 h-12 group-hover:scale-110 transition-transform" />
                 <div>
@@ -47,7 +37,7 @@ export default function Emergency() {
             </div>
 
             <a 
-              href="https://wa.me/27662283190" 
+              href="https://wa.me/27710731235" 
               target="_blank"
               className="inline-flex items-center gap-3 text-2xl font-black uppercase tracking-widest text-green-500 hover:text-white transition-colors mb-24"
             >

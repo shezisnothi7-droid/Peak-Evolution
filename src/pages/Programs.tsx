@@ -115,9 +115,6 @@ export default function Services({ onNavigate }: { onNavigate: (page: string) =>
           <h2 className="text-4xl font-black uppercase mb-4">24/7 Emergency Callouts</h2>
           <p className="text-xl font-bold mb-8">Electrical fault? Power outage? Security breach? We're on the way.</p>
           <div className="flex flex-col md:flex-row justify-center gap-6">
-            <a href="tel:0662283190" className="bg-black text-white px-10 py-4 font-black uppercase tracking-widest hover:scale-105 transition-transform">
-              Call Delano: 066 228 3190
-            </a>
             <a href="tel:0710731235" className="bg-black text-white px-10 py-4 font-black uppercase tracking-widest hover:scale-105 transition-transform">
               Call Miguel: 071 073 1235
             </a>

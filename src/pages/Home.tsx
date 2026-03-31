@@ -63,19 +63,13 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="tel:0662283190"
-                className="bg-brand-orange hover:bg-white hover:text-black text-black px-8 py-4 text-lg font-black uppercase tracking-widest transition-all flex items-center justify-center gap-3"
-              >
-                <Phone className="w-5 h-5" /> Call Delano
-              </a>
-              <a 
                 href="tel:0710731235"
-                className="bg-white hover:bg-brand-orange text-black px-8 py-4 text-lg font-black uppercase tracking-widest transition-all flex items-center justify-center gap-3"
+                className="bg-brand-orange hover:bg-white hover:text-black text-black px-8 py-4 text-lg font-black uppercase tracking-widest transition-all flex items-center justify-center gap-3"
               >
                 <Phone className="w-5 h-5" /> Call Miguel
               </a>
               <a 
-                href="https://wa.me/27662283190"
+                href="https://wa.me/27710731235"
                 target="_blank"
                 className="border border-white/20 hover:bg-white/10 text-white px-8 py-4 text-lg font-black uppercase tracking-widest transition-all flex items-center justify-center gap-3"
               >
@@ -221,9 +215,6 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
           <h2 className="text-5xl md:text-7xl font-black uppercase mb-8 leading-none">Need Help Now?</h2>
           <p className="text-2xl font-bold mb-12">Call us 24/7 for immediate assistance.</p>
           <div className="flex flex-col md:flex-row justify-center gap-6">
-            <a href="tel:0662283190" className="bg-black text-white px-12 py-6 text-2xl font-black uppercase tracking-tighter hover:scale-105 transition-transform">
-              Delano: 066 228 3190
-            </a>
             <a href="tel:0710731235" className="bg-black text-white px-12 py-6 text-2xl font-black uppercase tracking-tighter hover:scale-105 transition-transform">
               Miguel: 071 073 1235
             </a>

@@ -51,8 +51,7 @@ export default function App() {
             <span className="flex items-center gap-2">Serving Johannesburg & Sandton</span>
           </div>
           <div className="flex gap-6">
-            <a href="tel:0662283190" className="hover:underline">Delano: 066 228 3190</a>
-            <a href="tel:0710731235" className="hover:underline">Miguel: 071 073 1235</a>
+            <a href="tel:0710731235" className="hover:underline">Call Miguel: 071 073 1235</a>
           </div>
         </div>
       </div>
@@ -121,8 +120,7 @@ export default function App() {
                 </button>
               ))}
               <div className="pt-8 border-t border-white/10 space-y-6">
-                <a href="tel:0662283190" className="block text-2xl font-black uppercase">Delano: 066 228 3190</a>
-                <a href="tel:0710731235" className="block text-2xl font-black uppercase">Miguel: 071 073 1235</a>
+                <a href="tel:0710731235" className="block text-2xl font-black uppercase text-brand-orange">Call Miguel: 071 073 1235</a>
                 <button 
                   onClick={() => setCurrentPage('contact')}
                   className="w-full bg-brand-orange text-black py-4 text-xl font-black uppercase"
@@ -163,10 +161,10 @@ export default function App() {
                 Your all-in-one home & business power, security & maintenance experts. Serving Johannesburg, Sandton, and surrounding areas with 24/7 emergency support.
               </p>
               <div className="flex gap-4">
-                <a href="https://wa.me/27662283190" target="_blank" className="w-12 h-12 bg-black flex items-center justify-center border border-white/10 hover:border-brand-orange transition-colors">
+                <a href="https://wa.me/27710731235" target="_blank" className="w-12 h-12 bg-black flex items-center justify-center border border-white/10 hover:border-brand-orange transition-colors">
                   <MessageCircle className="w-6 h-6 text-green-500" />
                 </a>
-                <a href="tel:0662283190" className="w-12 h-12 bg-black flex items-center justify-center border border-white/10 hover:border-brand-orange transition-colors">
+                <a href="tel:0710731235" className="w-12 h-12 bg-black flex items-center justify-center border border-white/10 hover:border-brand-orange transition-colors">
                   <Phone className="w-6 h-6 text-brand-orange" />
                 </a>
               </div>
@@ -190,7 +188,6 @@ export default function App() {
               <h4 className="text-xs uppercase font-black text-white mb-6 tracking-widest">Contact</h4>
               <ul className="space-y-4 text-sm text-neutral-500 font-bold uppercase tracking-wider">
                 <li>Johannesburg, South Africa</li>
-                <li>Delano: 066 228 3190</li>
                 <li>Miguel: 071 073 1235</li>
                 <li className="text-brand-orange">24/7 Emergency Support</li>
               </ul>
@@ -210,7 +207,7 @@ export default function App() {
 
       {/* Floating WhatsApp Button */}
       <a 
-        href="https://wa.me/27662283190" 
+        href="https://wa.me/27710731235" 
         target="_blank"
         className="fixed bottom-24 right-6 z-40 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform md:bottom-6"
       >
@@ -220,7 +217,7 @@ export default function App() {
       {/* Sticky Mobile CTA */}
       <div className="lg:hidden fixed bottom-6 inset-x-6 z-30 flex gap-2">
         <a 
-          href="tel:0662283190"
+          href="tel:0710731235"
           className="flex-1 bg-brand-orange text-black py-4 font-black uppercase shadow-2xl flex items-center justify-center gap-2"
         >
           <Phone className="w-5 h-5" /> Call Now
